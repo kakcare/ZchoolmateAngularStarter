@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// test
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  show = false;
+
+  debugx(event){ 
+    let val = event.target.value
+    this.title = val
+    // console.log(event.target.value)
+  }
 }
